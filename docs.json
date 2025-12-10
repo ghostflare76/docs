@@ -21,10 +21,10 @@
             "group": "주요 기업",
             "pages": [
               "tech-blogs/meta",
+              "tech-blogs/github",
               "tech-blogs/netflix",
               "tech-blogs/airbnb",
               "tech-blogs/spotify",
-              "tech-blogs/github",
               "tech-blogs/facebook"
             ]
           },
@@ -57,6 +57,10 @@
               "tech-blogs/paypal",
               "tech-blogs/oreilly"
             ]
+          },
+          {
+            "group": "기술 아티클",
+            "pages": ["tech-blogs/general"]
           }
         ]
       },
@@ -69,11 +73,7 @@
           },
           {
             "group": "자동화",
-            "pages": [
-              "n8n/workflows",
-              "n8n/integrations",
-              "n8n/best-practices"
-            ]
+            "pages": ["n8n/workflows", "n8n/integrations", "n8n/best-practices"]
           }
         ]
       }
