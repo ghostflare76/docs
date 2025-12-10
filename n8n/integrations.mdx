@@ -1,0 +1,50 @@
+---
+title: "통합 가이드"
+description: "N8N과 다양한 서비스 연동하기"
+icon: "plug"
+---
+
+# 통합 가이드
+
+N8N을 다양한 서비스와 연동하는 방법을 알아보세요.
+
+## 주요 통합
+
+<CardGroup cols={2}>
+  <Card title="GitHub" icon="github">
+    GitHub API와 연동하여 이슈 및 PR 자동화
+  </Card>
+  <Card title="Slack" icon="slack">
+    Slack 봇 및 알림 자동화
+  </Card>
+  <Card title="Google Sheets" icon="table">
+    스프레드시트 데이터 자동 처리
+  </Card>
+  <Card title="REST API" icon="code">
+    커스텀 API 연동
+  </Card>
+</CardGroup>
+
+## API 인증
+
+N8N에서 외부 서비스와 연동할 때 필요한 인증 방법을 설명합니다.
+
+<Steps>
+  <Step title="Credentials 생성">
+    N8N에서 새로운 Credential을 추가합니다.
+  </Step>
+  <Step title="API 키 입력">
+    해당 서비스의 API 키나 OAuth 정보를 입력합니다.
+  </Step>
+  <Step title="연결 테스트">
+    연결이 정상적으로 작동하는지 테스트합니다.
+  </Step>
+</Steps>
+
+## 보안 고려사항
+
+<Warning>
+  API 키와 같은 민감한 정보는 절대 워크플로우에 직접 입력하지 마세요. 
+  항상 N8N의 Credentials 기능을 사용하여 안전하게 관리하세요.
+</Warning>
+

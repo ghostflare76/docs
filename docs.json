@@ -1,7 +1,7 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Mint Starter Kit",
+  "name": "Tech Blogs Hub",
   "colors": {
     "primary": "#16A34A",
     "light": "#07C983",
@@ -11,58 +11,68 @@
   "navigation": {
     "tabs": [
       {
-        "tab": "Guides",
+        "tab": "해외 기술 블로그",
         "groups": [
           {
-            "group": "Getting started",
+            "group": "소개",
+            "pages": ["index"]
+          },
+          {
+            "group": "주요 기업",
             "pages": [
-              "index",
-              "quickstart",
-              "development"
+              "tech-blogs/meta",
+              "tech-blogs/netflix",
+              "tech-blogs/airbnb",
+              "tech-blogs/spotify",
+              "tech-blogs/github",
+              "tech-blogs/facebook"
             ]
           },
           {
-            "group": "Customization",
+            "group": "소셜 & 미디어",
             "pages": [
-              "essentials/settings",
-              "essentials/navigation"
+              "tech-blogs/instagram",
+              "tech-blogs/medium",
+              "tech-blogs/slack",
+              "tech-blogs/vimeo",
+              "tech-blogs/flickr"
             ]
           },
           {
-            "group": "Writing content",
+            "group": "클라우드 & 인프라",
             "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/reusable-snippets"
+              "tech-blogs/cloudflare",
+              "tech-blogs/dropbox",
+              "tech-blogs/docker"
             ]
           },
           {
-            "group": "AI tools",
+            "group": "기타 서비스",
             "pages": [
-              "ai-tools/cursor",
-              "ai-tools/claude-code",
-              "ai-tools/windsurf"
+              "tech-blogs/grab",
+              "tech-blogs/salesforce",
+              "tech-blogs/lyft",
+              "tech-blogs/bbc",
+              "tech-blogs/airtable",
+              "tech-blogs/paypal",
+              "tech-blogs/oreilly"
             ]
           }
         ]
       },
       {
-        "tab": "API reference",
+        "tab": "N8N",
         "groups": [
           {
-            "group": "API documentation",
-            "pages": [
-              "api-reference/introduction"
-            ]
+            "group": "시작하기",
+            "pages": ["n8n/introduction"]
           },
           {
-            "group": "Endpoint examples",
+            "group": "자동화",
             "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
+              "n8n/workflows",
+              "n8n/integrations",
+              "n8n/best-practices"
             ]
           }
         ]
@@ -71,13 +81,13 @@
     "global": {
       "anchors": [
         {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
+          "anchor": "GitHub",
+          "href": "https://github.com/ghostflare76/engineering-rss",
+          "icon": "github"
         },
         {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
+          "anchor": "Newsletter",
+          "href": "https://ghostflare76.github.io/engineering-rss/newsletters/",
           "icon": "newspaper"
         }
       ]
@@ -90,33 +100,31 @@
   "navbar": {
     "links": [
       {
-        "label": "Support",
-        "href": "mailto:hi@mintlify.com"
+        "label": "RSS 피드",
+        "href": "https://github.com/ghostflare76/engineering-rss"
       }
     ],
     "primary": {
       "type": "button",
-      "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
+      "label": "블로그 보기",
+      "href": "https://ghostflare76.github.io/engineering-rss/newsletters/"
     }
   },
   "contextual": {
     "options": [
-     "copy",
-     "view",
-     "chatgpt",
-     "claude",
-     "perplexity",
-     "mcp",
-     "cursor",
-     "vscode"
-   ]
+      "copy",
+      "view",
+      "chatgpt",
+      "claude",
+      "perplexity",
+      "mcp",
+      "cursor",
+      "vscode"
+    ]
   },
   "footer": {
     "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
+      "github": "https://github.com/ghostflare76/engineering-rss"
     }
   }
 }

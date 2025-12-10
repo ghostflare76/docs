@@ -1,0 +1,70 @@
+---
+title: "베스트 프랙티스"
+description: "N8N 워크플로우 개발 모범 사례"
+icon: "star"
+---
+
+# N8N 베스트 프랙티스
+
+효율적이고 안정적인 워크플로우를 만들기 위한 모범 사례를 알아보세요.
+
+## 워크플로우 설계
+
+<AccordionGroup>
+  <Accordion title="단순하게 시작하기">
+    복잡한 워크플로우는 작은 단위로 나누어 개발하고 테스트하세요.
+  </Accordion>
+  <Accordion title="에러 핸들링">
+    모든 워크플로우에 적절한 에러 핸들링을 구현하세요.
+  </Accordion>
+  <Accordion title="로깅과 모니터링">
+    중요한 단계마다 로그를 남겨 디버깅을 쉽게 하세요.
+  </Accordion>
+</AccordionGroup>
+
+## 성능 최적화
+
+<CardGroup cols={2}>
+  <Card title="병렬 처리" icon="arrows-split">
+    가능한 경우 노드를 병렬로 실행하여 성능 향상
+  </Card>
+  <Card title="캐싱 활용" icon="database">
+    반복적인 데이터는 캐싱하여 API 호출 최소화
+  </Card>
+</CardGroup>
+
+## 보안
+
+<Steps>
+  <Step title="Credentials 관리">
+    모든 인증 정보는 N8N Credentials 기능으로 관리
+  </Step>
+  <Step title="접근 제어">
+    워크플로우 실행 권한을 적절히 설정
+  </Step>
+  <Step title="데이터 암호화">
+    민감한 데이터는 암호화하여 저장
+  </Step>
+</Steps>
+
+## 유지보수
+
+<Tip>
+  워크플로우에 명확한 이름과 설명을 추가하여 팀원들이 쉽게 이해할 수 있도록 하세요.
+</Tip>
+
+<CardGroup cols={2}>
+  <Card title="문서화" icon="book">
+    각 워크플로우의 목적과 동작을 문서화
+  </Card>
+  <Card title="버전 관리" icon="code-branch">
+    중요한 변경사항은 버전을 관리
+  </Card>
+  <Card title="테스트" icon="flask">
+    프로덕션 배포 전 충분한 테스트 수행
+  </Card>
+  <Card title="백업" icon="download">
+    정기적으로 워크플로우 백업
+  </Card>
+</CardGroup>
+
